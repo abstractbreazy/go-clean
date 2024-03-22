@@ -1,0 +1,15 @@
+---
+# a gRPC configuration.
+http:
+  host: '0.0.0.0'
+  port: '9092'
+  read_timeout: 5s
+  write_timeout: 5s
+limiter:
+  limit: 5
+  timeout: 10s
+  subnet_mask: 24 
+# Redis configuration.
+redis:
+  # Default Redis URL.
+  url: redis://redis:6379
